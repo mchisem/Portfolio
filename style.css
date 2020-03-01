@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+/* background */
+/* body{
+    background-color: cadetblue;
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: cadetblue;}
+  }  */
+
+body{
+    /* background-image: url("extras/walking-on-sunshine-48x48-huge-original-painting-art-abstract-artist-robert-r-abstract-paintings.jpg"); */
+    background-color: black;
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;  
+    min-height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+/* intro fade in */
+#intro {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  #intro {
+      font-size: 40px;
+      font-family: 'Rock Salt','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none !important;
+      color: white;
+      left: auto;
+      right: auto;
+      width: 100%;
+      clear: both;
+      margin-top: 20%;
+      margin-left: 30%;
+      position: fixed;
+  }
+
+  /*navbar  */
+  #masthead {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    background: #fff;
+    margin-left: -8px;
+  }
+  
+  #logo {
+    float: left;
+    width: 245px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  #logo:hover{
+      color: cornflowerblue;
+  }
+
+  nav {
+    float: right;
+    margin-top: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding-left: 20px;
+    margin-left: 20x;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+  nav a:first-child {
+    border-left: 0 none;
+  }
+
+  @media only screen and (max-width: -100px) {
+    nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  }
+
+  /* about me */
+  .title,
+  .portfolio,
+  .contact {
+      font-size: 40px;
+      margin-top: 5px;
+      font-family: 'Rock Salt','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #main-container {
+      float: left;
+      padding: 25px;
+      color: white;
+      margin-top: 150px;
+      /* background-color: black; */
+      width: 100%;
+      text-align: center;
+  }
+
+  #p {
+      font-size: 20px;
+  }
+
+  /* #me {
+      float: left;
+      margin-right: 15px;
+  } */
+
+#sec-section {
+    margin-bottom: 270px;
+    margin-top: 270px;
+}
+
+.portfolio{
+    background-color: black;
+}
+
+#icon {
+    margin-left: 10px;
+}
+
+/* contact form */
+  #form-name {
+    margin-bottom: 15px;
+    margin-top: -10px;
+  }
+  
+  #form-email {
+    margin-top: -10px;
+  }
+
+  #form-message{
+    margin-top: 10px;
+  } 
+
+  .form-control {
+      width: 450px;
+      height: 35px;
+  }
+
+  #message {
+      width: 450px;
+      height: 300px;
+  }
+
+#form-submit  {
+    background-color: darkblue; 
+    color: #fff;
+    padding: 5px 25px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+    
+#form-submit:hover {
+    opacity: .7;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+/* footer
+footer {
+    padding-top: 60px;
+    clear: both;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  } */

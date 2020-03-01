@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <audio autoplay>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/758580781&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <source src="extras\Vibe-Cookiee Kawaii.mp3" type="audio/ogg">
+    </audio> --> 
+
+    <video autoplay muted loop id="myVideo">
+        <source src="https://media.giphy.com/media/ZZa2bOnrrT6Ex2iaoF/giphy.mp4" type="video/mp4">
+    </video>
+
+    <div id="intro">
+        <h1>Maya Chisem</h1>
+    </div>
+
+    <header class="hide" id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo"> Maya Chisem</a>
+            <nav>
+                <a id="about" href="index.html">About</a>
+                <a id="port" href="portfolio.html">Portfolio</a>
+                <a id="cont" href="contact.html"> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+</div>
+
+<div class="hide" id="main-container">
+    <section class="main-section">
+    <h1 class="title">About Me</h1>
+     
+            <img src="extras\buns.jpg" id="me" style="width: 275px; height: 200px;">
+       
+    <div class="text" id="p">
+      <p>I was born on January 22, making me an Aquarius. I was raised in Long Beach, CA for the majority of my life.
+      It wasn't until October 2019 that I decided to move to South Central, CA to try my hand at living in Los Angeles. So far, 
+      I'm enjoying living outside of my home town.
+    </p>
+
+    <p>I started as a photographer Febuaray 2019 and have been taking pictures ever since. I managed to shoot my first wedding, 
+      take graduation photos, maternity pictures, a lot of portrait shots, and this month I will be shooting my first product shots.
+    </p>
+
+    <p>How did I come across this coding bootcamp? I told my boyfriend I needed another part time job and he suggested I become
+      a coder. I love challenging myself and learning new things so I was super interested. Coding is hard, but I am enjoiing
+      the challenge... kind of. I am honestly looking forward to working for a well paying company and showcasing my creativity
+      in a new field. </p>
+    </div> 
+    </section>
+
+    <div class="hide" id="sec-section">
+        <section>
+        <h1 class="portfolio">Portfolio</h1>
+            
+            <a href="https://mchisem.github.io/maya-chisem/">
+                <img id="icon" src="extras\photo.png" style="width: 350px; height: 340px;">
+            </a> 
+       
+            <a href="https://mchisem.github.io/Weather-or-Not/">
+                <img id="icon" src="extras\clouds.png" style="width: 350px; height: 340px;">
+            </a>
+
+            <a href="https://mchisem.github.io/Planning-in-Pink-HMW-Five/">
+                <img id="icon" src="extras\planner.png" style="width: 350px; height: 340px;">
+            </a>
+
+        </section>
+    </div>
+
+    <form>
+        <div class="hide" id="form-container">
+          <section class="form-section">
+              <h1 class="contact">Contact</h1>
+          
+              <div class="form-container"> 
+                  <input type="text" class="form-control" id="form-name" name="user-name" placeholder="Jane Doe">   
+              </div>
+  
+              <div class="form-container"> 
+                  <input type="text" class="form-control" id="form-email" name="user-email" placeholder="example@gmail.com">   
+              </div>
+  
+              <div class="form-container" id="form-message"> 
+                  <input class="form-control" id="message" maxlength="300" rows="7" required></input>
+              </div>
+  
+              <input type="submit" id="form-submit" value="Submit">  
+  
+          </div>  
+      </form>
+
+    <!-- <footer id="footer">
+            copyright @
+    </footer>      -->
+<script src="script.js"></script>
+</body>
+</html>
