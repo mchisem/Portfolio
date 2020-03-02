@@ -1,24 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
 
-/* background */
-/* body{
-    background-color: cadetblue;
-    animation-name: example;
-    animation-duration: 10s;
-}
-
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: cadetblue;}
-  }  */
-
 body{
-    /* background-image: url("extras/walking-on-sunshine-48x48-huge-original-painting-art-abstract-artist-robert-r-abstract-paintings.jpg"); */
     background-color: black;
-    animation-name: example;
-    animation-duration: 10s;
 }
 
 #myVideo {
@@ -27,6 +16,12 @@ body{
     bottom: 0;
     min-width: 100%;  
     min-height: 100%;
+    text-align: center;
+}
+
+#name {
+  text-decoration: none;
+  color: white;
 }
 
 .hide {
@@ -97,7 +92,7 @@ body{
     position: absolute;
     width: 100%;
     color: #fff;
-    background: #fff;
+    background: black;
     margin-left: -8px;
   }
   
@@ -108,9 +103,10 @@ body{
     font-size: 30px;
     font-weight: 700;
     line-height: 90px;
-    color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
+    margin-left: 60px;
   }
   
   #logo:hover{
@@ -122,6 +118,7 @@ body{
     margin-top: 30px;
     padding-right: 30px;
     font-size: 20px;
+    margin-right: 60px;
   }
   
   nav a {
@@ -129,9 +126,8 @@ body{
     padding-left: 20px;
     margin-left: 20x;
     line-height: 18px;
-    color: #999;
+    color: white;
     text-decoration: none;
-    border-left: 1px solid #efefef;
   }
   
   nav a:first-child {
@@ -151,7 +147,7 @@ body{
   }
 
   /* about me */
-  .title,
+  #maya,
   .portfolio,
   .contact {
       font-size: 40px;
@@ -159,39 +155,58 @@ body{
       font-family: 'Rock Salt','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
-  #main-container {
+  .main-container {
       float: left;
-      padding: 25px;
       color: white;
-      margin-top: 150px;
-      /* background-color: black; */
       width: 100%;
       text-align: center;
+      /* padding-top: 250px; */
+      /* background-image: url("extras/me.png"); */
   }
 
-  #p {
+  .main-section {
+    background-image: url("extras/me.png");
+    padding-top: 250px;
+    padding-bottom: 390px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .title {
+      background-color: black; 
+      opacity: 0.8; 
+      margin-right: 600px;
+      margin-left: 60px;
+      padding: 15px;
+  }
+
+  .text {
       font-size: 20px;
+      /* margin-right: 600px; */
   }
 
-  /* #me {
-      float: left;
-      margin-right: 15px;
-  } */
-
-#sec-section {
-    margin-bottom: 270px;
+  .sec-section {
     margin-top: 270px;
-}
+    /* background-image: url("extras/Screenshot (28).png"); */
+    padding-bottom: 250px;
+  }
 
-.portfolio{
-    background-color: black;
-}
-
-#icon {
+  #icon {
     margin-left: 10px;
+    border: 5px solid black;
+    border-left: 10px solid black;
+  }
+
+#icon:hover{
+  opacity: 0.5;
 }
 
 /* contact form */
+  /* .form-container{
+    /* background-image: url("extras/Screenshot (27).png"); */
+    /* padding-top: 250px; 
+  } */
+
   #form-name {
     margin-bottom: 15px;
     margin-top: -10px;
@@ -229,16 +244,40 @@ body{
 }
 
 .form-section {
-    margin-bottom: 20px;
+    margin-bottom: -100px;
 }
 
-/* footer
-footer {
-    padding-top: 60px;
+/* footer */
+#footer {
+    padding-top: 200px;
     clear: both;
     font-size: 14px;
     color: #fff;
     text-align: center;
     width: 100%;
     position: relative;
-  } */
+    margin-bottom: 10px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .fa:hover,
+  .link:hover {
+    color: cornflowerblue;
+    transition: transform 150ms;
+    transform: translateY(-3px);
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-right: 5px;
+    padding-right: 5px;
+  }
