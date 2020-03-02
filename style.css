@@ -146,22 +146,22 @@ body{
   }
   }
 
-  /* about me */
+  /* containers */
   #maya,
   .portfolio,
-  .contact {
+  .contact,
+  .resu-me {
       font-size: 40px;
       margin-top: 5px;
       font-family: 'Rock Salt','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
+  /* about me */
   .main-container {
       float: left;
       color: white;
       width: 100%;
       text-align: center;
-      /* padding-top: 250px; */
-      /* background-image: url("extras/me.png"); */
   }
 
   .main-section {
@@ -182,30 +182,94 @@ body{
 
   .text {
       font-size: 20px;
-      /* margin-right: 600px; */
   }
 
-  .sec-section {
-    margin-top: 270px;
-    /* background-image: url("extras/Screenshot (28).png"); */
-    padding-bottom: 250px;
+  /* resume */
+  .google {
+    position: relative;
+    width: 50%;
   }
 
   #icon {
-    margin-left: 10px;
-    border: 5px solid black;
-    border-left: 10px solid black;
+    display: block;
+    width: 500px; 
+    height: 560px;
+    margin-left: 66%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 560px;
+    width: 500px;
+    margin-left: 66%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .google:hover .overlay {
+    opacity: 0.9;
+  }
+  
+  .words {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .resume {
+    margin-bottom: 200px;
   }
 
-#icon:hover{
-  opacity: 0.5;
-}
+  /* portfolio */
+  .sec-section {
+    margin-bottom: 250px;
+  }
 
-/* contact form */
-  /* .form-container{
-    /* background-image: url("extras/Screenshot (27).png"); */
-    /* padding-top: 250px; 
-  } */
+  #photography,
+  #weather,
+  #password {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 25px;
+    width: 350px; 
+    margin-left: 90px;
+ }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 100;
+    height: 340px;
+  }
+
+  .p {
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    top: 35%;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .work img:hover{
+    opacity: 1;
+  }
+
+  /* form */
+  #section3 {
+    margin-top: 250px;
+  }
 
   #form-name {
     margin-bottom: 15px;
