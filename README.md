@@ -1,4 +1,4 @@
 # Portfolio
 
 A portfolio for my wesbites!
-https://mchisem.github.io/Portfolio/
+https://mchisem.github.io/portfolio/
