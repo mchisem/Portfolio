@@ -83,18 +83,13 @@ body{
       position: fixed;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 576px) {
     /* For mobile phones: */
-  #intro {
-    margin-left: 3%;
-    font-size: 20px;
-    padding-left: 15px;
-    margin-top: 0%;
-    overflow: hidden;
+    #intro {
+      text-align: center;
+      padding-right: 5px;
+      margin-top: 40%;
     }
-  #mySong {
-    animation-play-state: running;
-  }
   }
 
   /*navbar  */
@@ -130,6 +125,13 @@ body{
     font-size: 20px;
     margin-right: 60px;
   }
+
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+  nav {
+    margin-right: 42px;
+    }
+  }
   
   nav a {
     display: inline-block;
@@ -142,16 +144,6 @@ body{
   
   nav a:hover {
     color: cornflowerblue;
-  }
-
-  @media only screen and (max-width: 768px) {
-    nav a {
-    display: inline-block;
-    padding-left: 4px;
-    line-height: 18px;
-    color: white;
-    text-decoration: none;
-  }
   }
 
   /* containers */
@@ -187,11 +179,32 @@ body{
       padding: 15px;
   }
 
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .title {
+      text-align: center;
+      padding: 5px;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .main-section {
+      padding-bottom: 100px;
+    }
+  }
+
   .text {
       font-size: 20px;
   }
 
   /* resume */
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .resu-me {
+      padding-top: 0;
+    }
+  }
+
   .google {
     position: absolute;
   }
@@ -215,6 +228,16 @@ body{
     opacity: 0;
     transition: .5s ease;
     background-color: black;
+  }
+
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    #icon,
+    .overlay {
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+    }
   }
   
   .google:hover .overlay {
@@ -241,6 +264,20 @@ body{
     margin: 30px;
     margin-top: 0;
     margin-bottom: 250px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+  #two,
+  #three,
+  #four {
+    margin: 10px;
+    margin-bottom: 50px;
+    }
+
+    #four{
+      margin-bottom: 200px;
+    }
   }
 
   /* form */
@@ -272,8 +309,16 @@ body{
       position: relative;
   }
 
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+  .form-control,
+  #message {
+    width: 100%;
+    }
+  }
+
 #form-submit  {
-    background-color: cornflowerblue; 
+    background-color: darkblue; 
     color: #fff;
     padding: 5px 25px;
     font-size: 18px;
@@ -283,7 +328,7 @@ body{
 }
     
 #form-submit:hover {
-    opacity: .7;
+    opacity: 0.6;
     font-size: larger;
 }
 
@@ -318,10 +363,24 @@ body{
     transform: translateY(-3px);
   }
 
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .fa {
+     margin: 13px;
+    }
+  }
+
   .link {
     text-decoration: none;
     color: white;
     font-size: 25px;
     margin-right: 5px;
     padding-right: 5px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .link {
+     margin: 10px;
+    }
   }
