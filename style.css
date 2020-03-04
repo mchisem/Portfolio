@@ -86,7 +86,7 @@ body{
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
   #intro {
-    margin-left: 3.5%;
+    margin-left: 3%;
     font-size: 20px;
     padding-left: 15px;
     margin-top: 0%;
