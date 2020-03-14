@@ -8,6 +8,7 @@ html {
 
 body{
     background-color: black;
+    text-align: center;
 }
 
 #myVideo {
@@ -16,7 +17,20 @@ body{
     bottom: 0;
     min-width: 100%;  
     min-height: 100%;
-    text-align: center;
+}
+
+/* intro */
+#intro {
+  color: white;
+  left: auto;
+  right: auto;
+  width: 100%;
+  margin-top: 20%;
+  position: fixed;
+  font-size: 40px;
+  font-family: 'Rock Salt','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  animation: fadeIn ease 12s;
 }
 
 #name {
@@ -24,72 +38,13 @@ body{
   color: white;
 }
 
-/* intro fade in */
-#intro {
-    animation: fadeIn ease 10s;
-    -webkit-animation: fadeIn ease 10s;
-    -moz-animation: fadeIn ease 10s;
-    -o-animation: fadeIn ease 10s;
-    -ms-animation: fadeIn ease 10s;
+#name:hover {
+  opacity: 0.5;
 }
-
+/* intro fade in */
 @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  #intro {
-      font-size: 40px;
-      font-family: 'Rock Salt','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      text-decoration: none !important;
-      color: white;
-      left: auto;
-      right: auto;
-      width: 100%;
-      clear: both;
-      margin-top: 20%;
-      margin-left: 30%;
-      position: fixed;
-  }
-
-  @media only screen and (max-width: 576px) {
-    /* For mobile phones: */
-    #intro {
-      text-align: center;
-      padding-right: 5px;
-      margin-top: 40%;
-    }
+  0% {opacity:0;}
+  100% {opacity:1;}
   }
 
   /*navbar  */
