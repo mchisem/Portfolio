@@ -2,128 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header id="masthead">
-        <div class="container">
-            <a href="index.html" id="logo">MAYA CHISEM</a>
-            <nav>
-                <a href="#section1">About</a>
-                <a href="#resume">Portfolio</a>
-                <a href="#form-email">Contact</a>
-            </nav>
-        </div>
+
+    <!-- navbar -->
+    <header id="header">
+        <nav>
+            <a id="contact" href="contact.html">Contact</a>
+
+            <a id="home" href="index.html">Home</a>
+            <a id="about" href="about.html">About</a>
+            <a id="resume" href="portfolio.html">Portfolio</a>
+        </nav>
     </header>
 
-</div>
-
-<div class="main-container">
-    <section class="main-section" id="section1">
-    
-    <div class="title"><h1 id="maya">About Me</h1>
-
-    <div class="text" id="p">
-      <p>I was born on January 22, making me an Aquarius. I was raised in Long Beach, CA for the majority of my life.
-      It wasn't until October 2019 that I decided to move to South Central, CA to try my hand at living in Los Angeles. So far, 
-      I'm enjoying living outside of my home town.
-    </p>
-
-    <p>I started as a photographer Febuaray 2019 and have been taking pictures ever since. I managed to shoot my first wedding, 
-      take graduation photos, maternity pictures, a lot of portrait shots, and this month I will be shooting my first product shots.
-    </p>
-
-    <p>How did I come across this coding bootcamp? I told my boyfriend I needed another part time job and he suggested I become
-      a coder. I love challenging myself and learning new things so I was super interested. Coding is hard, but I am having fun with
-      the challenge... kind of. I am honestly looking forward to working for a well paying company and showcasing my creativity
-      in a new field. </p>
+    <!-- text transition container -->
+    <div class="container py-5">
+      <div class="output" id="output">
+        <h1 class="cursor"></h1>
+      </div>
     </div>
-    </div> 
-    </section>
 
-    <div class="resume" id="resume">
-        <section>
-            <h1 class="resu-me" style="padding-top: 150px;">Portfolio</h1>
+    <!-- Work -->
+    <div class="portfolio">
+      <h1>Portfolio</h1>
+        <section class="second-section" id="second">
 
-            <div class="google" id="two">
+            <div class="container">
+              <a href="https://mchisem.github.io/hw-3-Password-Generator/">
+                <img src="extras/psswrd.png" alt="Avatar" class="image">
+              </a>
+                <div class="hover">
+                  <div class="words">
+                      <a class="web" href="https://mchisem.github.io/hw-3-Password-Generator/">
+                        Password Generator
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <a href="https://mchisem.github.io/TimedQuiz/">
+                  <img src="extras/quiz.png" alt="Avatar" class="image">
+                </a>
+                <div class="hover">
+                  <div class="words">
+                      <a class="web" href="https://mchisem.github.io/TimedQuiz/">
+                        Quiz
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <a href="https://mchisem.github.io/Planning-in-Pink-HMW-Five/">
+                  <img src="extras/planner.png" alt="Avatar" class="image">
+                </a>
+                <div class="hover">
+                  <div class="words">
+                      <a class="web" href="https://mchisem.github.io/Planning-in-Pink-HMW-Five/">
+                        Day Planner
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <a href="https://mchisem.github.io/WeatherDashboard/">
+                  <img src="extras/weather.png" alt="Avatar" class="image">
+                </a>
+                <div class="hover">
+                  <div class="words">
+                      <a class="web" href="https://mchisem.github.io/WeatherDashboard/">
+                        Weather App
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
                 <a href="https://mchisem.github.io/Photography/index.html">
-                    <img id="icon" src="extras\Screenshot (58).png">
+                  <img src="extras/photo.png" alt="Avatar" class="image">
                 </a>
-                <div class="overlay">
-                    <a href="https://mchisem.github.io/Photography/index.html">
-                        <div class="words">A website developed to showcase my work as a Photographer.</div>
-                    </a>
-              </div> 
-            </div>
+                <div class="hover">
+                  <div class="words">
+                      <a class="web" href="https://mchisem.github.io/Photography/index.html">
+                        Photography
+                      </a>
+                  </div>
+                </div>
+              </div>
 
-            <div class="google" id="three">
-                <a href="https://mchisem.github.io/Weather-or-Not/">
-                    <img id="icon" src="extras\Screenshot (25).png">
+              <div class="container">
+                <a href="https://mchisem.github.io/Note-Taker/">
+                  <img src="extras/note.png" alt="Avatar" class="image">
                 </a>
-                <div class="overlay">
-                    <a href="https://mchisem.github.io/Weather-or-Not/">
-                        <div class="words">An app designed to help you figure out where to go and what to wear based on the weather.</div>
-                    </a>
-              </div> 
-            </div>
-
-            <div class="google" id="four">
-                <a href="https://mchisem.github.io/hw-3-Password-Generator/">
-                    <img id="icon" src="extras\psswrd.png">
-                </a>
-                <div class="overlay">
-                    <a href="https://mchisem.github.io/hw-3-Password-Generator/">
-                        <div class="words">Need a random password generated? This application does just that!</div>
-                    </a>
-              </div> 
-            </div>
+                <div class="hover">
+                  <div class="words">
+                      <a class="web" href="https://mchisem.github.io/Note-Taker/">
+                        Note Taker
+                      </a>
+                  </div>
+                </div>
+              </div>
         </section>
+
+        <!-- footer -->
+        <footer id="footer">
+          <div>
+              <p id="rights">All rights reserved @Maya Chisem 2020</p>
+              <a href="https://www.instagram.com/mayachizam/" class="fa fa-instagram" id="insta"> Instagram</a>
+              <a href="https://www.linkedin.com/in/maya-chisem-030827132/" class="fa fa-linkedin" id="linked"> LinkedIn</a>
+              <a href="https://github.com/mchisem" class="fa fa-github" id="git"> GitHub</a>
+              <a id="link" class="fa fa-arrow-up" href="#header"></a>
+
+          </div>
+      </footer>  
     </div>
-
-    <form>
-        <div class="form-container" id="section3">
-          <section class="form-section">
-              <h1 class="contact" style="padding-top: 250px;" id="contact">Contact</h1>
-          
-              <div class="form-container"> 
-                  <input type="text" class="form-control" id="form-name" name="user-name" placeholder="Jane Doe">   
-              </div>
-  
-              <div class="form-container"> 
-                  <input type="text" class="form-control" id="form-email" name="user-email" placeholder="example@gmail.com">   
-              </div>
-  
-              <div class="form-container" id="form-message"> 
-                  <input class="form-control" id="message" maxlength="300" rows="7" required></input>
-              </div>
-  
-              <input type="submit" id="form-submit" value="Submit">  
-  
-          </div>  
-      </form>
-
-    <footer id="footer">
-        <a href="https://www.instagram.com/mayachizam/" class="fa fa-instagram"></a>
-        <a href="https://www.linkedin.com/in/maya-chisem-030827132/" class="fa fa-linkedin"></a>
-        <a href="https://github.com/mchisem" class="fa fa-github"></a>
-
-        <a class="link" href="#section1">About</a>
-        <a class="link" href="#resume">Portfolio</a>
-        <a class="link" id="last" href="#form-email">Contact</a>
-    </footer>     
-<script src="script.js"></script>
+<script src="js/portfolio.js"></script>
 </body>
 </html>

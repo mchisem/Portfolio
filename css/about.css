@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: teal;
+    overflow: hidden;
+}
+  
+/*  */
+/* navbar */
+/*  */
+nav {
+  position: absolute;
+  z-index: 999;  
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  width: 100%;
+}
+  
+nav a {
+  display: inline-block;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+}
+  
+nav a:hover {
+  opacity: 0.5;
+}
+
+#resume,
+#about,
+#home {
+  padding-right: 20px;
+}
+
+#about {
+  text-decoration: underline;
+}
+
+#contact {
+  float: right;
+}
+ 
+/*  */
+/* about me */
+/*  */
+#header {
+  background: none;
+  height: 10vh;
+}
+  
+.main {
+    height: 100%;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#one {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  height: 40vh;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+#two {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  height: 40vh;
+}
+
+#three {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  height: 60vh;
+}
+
+#four {
+  position: absolute;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  height: 60vh;
+  z-index: -1;
+}
+
+#five {
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  height: 65vh;
+  z-index: -1;
+}
+
+.text {
+  font-size: 17px;
+  padding-top: 16%;
+}
+
+.fa {
+  text-decoration: none;
+  color: white;
+}
+
+.fa:hover {
+  transition: transform 150ms;
+  transform: translateY(-3px);
+}
+
+/*  */
+/* footer */
+/*  */
+#footer {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+}

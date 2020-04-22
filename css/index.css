@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* body {
+    background: white;
+  } */
+  
+  /* slider */
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: -1;
+  }
+  
+  /* video */
+  section {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero {
+    text-align: center;
+    position: relative;
+    top: 14%;
+    height: 80%;
+    width: 100%;
+    margin: 100px;
+  }
+  
+  #myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* .hero::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    opacity: 0.2;
+  } */
+  
+  #enter {
+    color: white;
+    position: absolute;
+    top: 44%;
+    left: 0;
+    right: 0;
+    font-size: 60px;
+    text-decoration: none;
+    z-index: 4;
+    animation: enter;
+    animation-duration: 9s;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #enter {
+        margin: 0;
+        padding: 0;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+    }
+  }
+  
+  @keyframes enter {
+    0%{opacity: 0;}
+    50%{opacity: 0.01;}
+    100%{opacity: 1;}
+  }
+
+  #enter:hover {
+    text-decoration: line-through;
+  }
