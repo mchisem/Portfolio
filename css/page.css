@@ -98,6 +98,7 @@ nav a {
     float: left;
     margin-left: 25px;
     width: 50%;
+    z-index: 1;
 }
 
  #s2 img {
@@ -105,6 +106,7 @@ nav a {
     height: 100vh;
     right: 0;
     bottom: 0 !important;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -115,22 +117,26 @@ nav a {
         left: 0;
         right: 0;
         clear: both;
+        font-size: 17px;
         width: 100%;
         height: 100%;
+        z-index: 1;
     }
   }
 
 @media only screen and (max-width: 768px) {
 /* For mobile phones: */
 #s2 img {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
+    z-index: -1;
 }
 }
 
 #more {
     text-decoration: none;
     color: cornflowerblue;
+    z-index: 1;
 }
 /*  */
 /* Contact */
