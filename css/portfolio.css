@@ -75,6 +75,7 @@ nav a:hover {
       padding: 0;
       left: 0;
       height: 35vh;
+      background-color: cornflowerblue;
   }
   }
 
@@ -123,7 +124,7 @@ h1.cursor::after {
   .portfolio
   {
       width: 100%;
-      top: 40%;
+      top: 42.5%;
   }
   }
 
@@ -134,7 +135,16 @@ h1 {
     font-size: 90px;
     color: black;
 }
- 
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .portfolio h1
+  {
+      font-size: 60px;
+      display: none;
+  }
+  }
+
 .container {
   position: relative;
   margin: 15px;
@@ -237,3 +247,35 @@ h1 {
 #rights {
   float: left;
 }
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  #footer
+  {
+      width: 100%;
+  }
+  }
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .fa
+  {
+      margin-right: 5%;
+  }
+  }
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  #linked
+  {
+      margin-right: 8.5%;
+  }
+  }
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  #rights
+  {
+      display: none;
+  }
+  }
