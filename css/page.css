@@ -32,14 +32,25 @@ nav a {
     margin-right: 10px;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #contact {
     float: right;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+/*  */
+/* down arrow */
+/*  */
+#arrow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 6vh;
+    padding: 15px;
 }
 
 /*  */
@@ -52,7 +63,7 @@ nav a {
 
 #s1 h1 {
     position: absolute;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto', sans-serif;
     top: 15%;
     left: 0;
     right: 0;
@@ -65,6 +76,7 @@ nav a {
     top: 32%;
     left: 0;
     right: 0%;
+    font-size: 24px;
 }
 
 #watch {
@@ -148,7 +160,9 @@ nav a {
     font-size: 50vh !important;
 }
   
-#more {
+#s2 p a,
+#s3 p a,
+#s4 p a {
     text-decoration: none;
     color: cornflowerblue;
     z-index: 1;

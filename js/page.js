@@ -9,6 +9,9 @@
          const resume = document.querySelector("#file");
          const img1 = document.querySelector("#img1");
          const img2 = document.querySelector("#one");
+         const arrow = document.querySelector("#arrow");
+
+         arrow.addEventListener("click", next)
 
          tl.fromTo(title, 0.5, 
             {y: "100", opacity: 0}, {y: 0, opacity: 1});
@@ -19,7 +22,6 @@
             tl.fromTo(video, 0.5,
                 {y: 0, opacity: 0}, {y: 0, opacity: 1}
                 );
-
         }
 
         else if(destination.index === 1) {
@@ -28,7 +30,6 @@
             tl.fromTo(resume, 0.5,
                 {x: "100", opacity: 0}, {x: 0, opacity: 1} 
                  );
-
         }  
 
         else if(destination.index === 2) {
