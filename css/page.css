@@ -8,7 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /*  */
 /* navbar */
 /*  */
@@ -17,8 +16,6 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 999;
-    text-decoration: none;
-    color: black;
 }
 
 nav a {
@@ -32,14 +29,14 @@ nav a {
     margin-right: 10px;
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 #contact {
     float: right;
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 /*  */
@@ -51,24 +48,24 @@ nav a {
     right: 0;
     font-size: 6vh;
     padding: 15px;
+    z-index: 999;
 }
 
 /*  */
 /* about */
 /*  */
-
 #s1 {
     text-align: center;
+    /* background-image: linear-gradient(lightgrey, white); */
 }
 
 #s1 h1 {
     position: absolute;
-    font-family: 'Roboto', sans-serif;
     top: 15%;
     left: 0;
     right: 0;
     font-size: 90px;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #s1 p {
@@ -112,7 +109,7 @@ nav a {
 #s5,
 #s6 {
     text-align: center;
-    font-size: 24px;
+    font-size: 27px;
     width: 100%;
 }
 
@@ -126,11 +123,16 @@ nav a {
     left: 0;
     right: 0;
     font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*  */
 /* Resume */
 /*  */
+/* #s2 {
+   background-color: chartreuse;
+} */
+
 #s2 p {
     position: absolute;
     width: 50%;
@@ -171,12 +173,21 @@ nav a {
 /*  */
 /* web */
 /*  */
+#s3 {
+    background-color: black;
+}
+
+#s3 h1 {
+    color: white;
+}
+
 #s3 p {
     position: absolute;
     top: 40%;
     width: 50%;
     z-index: 1;
-    right: 0;
+    right: 3%;
+    color: white;
 }
 
 #s3 img {
@@ -198,9 +209,14 @@ nav a {
 /*  */
 /* Photography */
 /*  */
+#s4 {
+    background-image: linear-gradient(cornflowerblue, skyblue);
+}
+
 #s4 p {
     position: absolute;
     top: 40%;
+    left: 3%;
     width: 50%;
 }
 

@@ -11,8 +11,6 @@
          const img2 = document.querySelector("#one");
          const arrow = document.querySelector("#arrow");
 
-         arrow.addEventListener("click", next)
-
          tl.fromTo(title, 0.5, 
             {y: "100", opacity: 0}, {y: 0, opacity: 1});
         
