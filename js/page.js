@@ -6,6 +6,7 @@
          const title = section.querySelector("h1");
          const tl = new TimelineMax({delay: 0.5});
          const video = document.querySelector("#watch");
+         const img1 = document.querySelector("#img1");
 
          tl.fromTo(title, 0.5, 
             {y: "100", opacity: 0}, {y: 0, opacity: 1});
@@ -25,6 +26,10 @@
 
         else if(destination.index === 2) {
             video.classList.add("hide");
+
+            tl.fromTo(img1, 0.5,
+                {x: "-100", opacity: 0}, {x: 0, opacity: 1} 
+                 );
         }
  
         else if(destination.index === 3) {
