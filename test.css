@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+/* navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+}
+
+#mail {
+    float: right;
+}
+
+/* about me */
+#s1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 4%;
+}
+
+#s1 h1 {
+    font-size: 90px;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+.fa-circle {
+    color: black;
+    font-size: 5px !important;
+    padding: 10px;
+}
+
+/* resume */
+#s2 {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 80vh;
+}
+
+#s2 p {
+    width: 50%;
+    float: left;
+}
+
+#s2 .fa {
+    color: black !important;
+    size: 20px !important;
+    font-size: 40px;
+}
+
+/* web dev */
+#s3 {
+    position: absolute;
+    top: 180%;
+    width: 100%;
+    height: 80vh;
+}
+
+#s3 img {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    height: 60vh;
+}
+
+#s3 p{
+    width: 50%;
+    right: 0;
+    float: right;
+}
+
+/* photography */
+#s4 {
+    position: absolute;
+    top: 260%;
+    width: 100%;
+    height: 80vh;
+}
+
+#s4 img {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    height: 80vh;
+}
+
+#s4 p {
+    width: 50%;
+    float: left;
+}
+
+/* content */
+#s5 {
+    position: absolute;
+    top: 340%;
+    width: 100%;
+    height: 80vh;
+}
+
+#s5 p {
+    width: 50%;
+    float: right;
+}
+
+/* contact */
+#s6 {
+    position: absolute;
+    top: 420%;
+    width: 100%;
+    height: 80vh;
+}
+
+#s6 h1 {
+    font-size: 40px;
+}
+
+form {
+    margin-top: 7%;
+    text-align: center;
+}
+
+input {
+    font-size: 18px;
+    width: 30%;
+}
+
+#msg {
+    padding-bottom: 50px;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+}
+
+footer .fa {
+    float: right;
+    margin-right: 10px;
+}
+
+footer .fa:hover {
+    opacity: 0.5;
+}

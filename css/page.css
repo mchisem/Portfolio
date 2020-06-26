@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /*  */
 /* navbar */
 /*  */
@@ -51,62 +52,78 @@ nav a {
 
 #s1 h1 {
     position: absolute;
+    font-family: 'Poiret One', cursive;
     top: 15%;
     left: 0;
     right: 0;
-    font-size: 40px;
+    font-size: 90px;
+
 }
 
-/*  */
-/* Portfolio */
-/*  */
-#s2 {
+#s1 p {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0%;
+}
+
+#watch {
+    position: absolute;
+    width: 100%;
+}
+
+#video {
+    position: absolute;
+    left: 34% !important;
+    margin-top: 23% !important;
+    z-index: 999;
+}
+
+.hide {
+    display: none;
+}
+
+#s1 .fa {
+    text-decoration: none;
+    color: black;
+    font-size: 7px !important;
+    padding: 10px;
+}
+
+#s1 .fa:hover {
+    opacity: 1;
+}
+
+#s2,
+#s3,
+#s4,
+#s5,
+#s6 {
     text-align: center;
     font-size: 24px;
     width: 100%;
-    /* background: linear-gradient(to right, white, lightgray); */
 }
 
-#s2 h1 {
+#s2 h1,
+#s3 h1,
+#s4 h1,
+#s5 h1,
+#s6 h1 {
     position: absolute;
     top: 15%;
     left: 0;
     right: 0;
-    font-size: 40px;
+    font-size: 55px;
 }
 
-#work {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 29%;
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    #work {
-        margin: 0;
-        padding: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        top: 25%;
-    }
-  }
-
+/*  */
+/* Resume */
+/*  */
 #s2 p {
-    float: left;
-    margin-left: 25px;
+    position: absolute;
     width: 50%;
     z-index: 1;
-}
-
- #s2 img {
-    position: absolute;
-    height: 100vh;
-    right: 0;
-    bottom: 0 !important;
-    z-index: -1;
+    top: 40%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -124,52 +141,71 @@ nav a {
     }
   }
 
-@media only screen and (max-width: 768px) {
-/* For mobile phones: */
-#s2 img {
-    height: 70vh;
-    width: 100%;
-    z-index: -1;
+#s2 .fa {
+    float: right;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-size: 50vh !important;
 }
-}
-
+  
 #more {
     text-decoration: none;
     color: cornflowerblue;
     z-index: 1;
 }
-/*  */
-/* Contact */
-/*  */
-#s3 {
-    text-align: center;
-    background-color: white;
-    font-size: 25px;
-}
 
-#s3 h1{
+/*  */
+/* web */
+/*  */
+#s3 p {
     position: absolute;
-    top: 15%;
-    left: 0;
+    top: 40%;
+    width: 50%;
+    z-index: 1;
     right: 0;
-    font-size: 40px;
 }
 
-#me {
+#s3 img {
     position: absolute;
+    height: 60vh;
+    top: 30%;   
     left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #s3 img {
+        height: 70vh;
+        width: 100%;
+        z-index: -1;
+    }
+    }
+
+/*  */
+/* Photography */
+/*  */
+#s4 p {
+    position: absolute;
+    top: 40%;
+    width: 50%;
+}
+
+#s4 img {
+    position: absolute;
+    height: 100vh;
+    right: 0;
     bottom: 0;
-    height: 50vh;
 }
 
-.fa {
-    text-decoration: none;
-    color: cornflowerblue;
-}
-
-.fa:hover,
-#more:hover {
-    opacity: 0.5;
+/*  */
+/* content */
+/*  */
+#s5 p {
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    z-index: 1;
+    right: 0;
 }
 
 /*  */
@@ -202,7 +238,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .fa
+    footer .fa
     {
         margin-right: 10px;
     }

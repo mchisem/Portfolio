@@ -1,24 +1,38 @@
  new fullpage("#fullpage", {
      autoScrolling: true,
-     navigation: true,
+     navigation: false,
      onLeave: (origin, destination, direction) => {
          const section = destination.item;
          const title = section.querySelector("h1");
          const tl = new TimelineMax({delay: 0.5});
+         const video = document.querySelector("#watch");
+
          tl.fromTo(title, 0.5, 
-            {y: "50", opacity: 0}, {y: 0, opacity: 1});
+            {y: "100", opacity: 0}, {y: 0, opacity: 1});
+        
+        if(destination.index === 0) {
+            tl.fromTo(video, 0.5,
+                {y: 0, opacity: 0}, {y: 0, opacity: 1}
+                );
 
-        if(destination.index === 1) {
-            const img = document.querySelectorAll("img");
-            const work = document.querySelector("#work");
+            video.classList.remove("hide");
+        }
 
-            tl.fromTo(work, 1,
-                {x: "-50", opacity: 0}, 
-                {x: 0, opacity: 1, ease: Power2.easeInOut});
+        else if(destination.index === 1) {
+            video.classList.add("hide");
 
-            tl.fromTo(img, 1, 
-                {x: "50", opacity: 0}, 
-                {x: 0, opacity: 1, ease: Power2.easeInOut},"-=.7");
-        }    
+        }  
+
+        else if(destination.index === 2) {
+            video.classList.add("hide");
+        }
+ 
+        else if(destination.index === 3) {
+            video.classList.add("hide");
+        }
+
+        else if(destination.index === 4) {
+            video.classList.add("hide");
+        }
      }
  });
