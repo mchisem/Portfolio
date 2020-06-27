@@ -7,7 +7,7 @@
 
     <title>Home</title>
 
-    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
     <link rel="stylesheet" href="css/fullpage.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,23 +21,16 @@
     <!-- navbar -->
     <header id="header">
         <nav>
-            <a id="contact" href="mailto:chisem.maya@gmail.com"><i class="fa fa-envelope"></i></a>
-
-            <a id="home" href="index.html">About</a>
-            <!-- <a id="resume" href="#s2">Portfolio</a> -->
+            <a class="nav" id="contact" href="mailto:chisem.maya@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a class="nav" id="home" href="index.html">About</a>
         </nav>
     </header>
 
     <!-- video -->
-    <div id="watch" style="z-index: 999;">
+    <div id="watch" alt="video" style="z-index: 999;">
         <video style="position: absolute;" autoplay muted loop id="video">
             <source src="https://media.giphy.com/media/f4JOmg1Ryg4tlJEbU3/giphy.mp4" type="video/mp4">
         </video>
-    </div>
-
-    <!-- scroll down -->
-    <div id="arrow">
-        <i class="fa fa-chevron-down"></i>
     </div>
 
     <!-- content -->
@@ -45,8 +38,8 @@
         <section id="s1" class="section s1">
             <h1>Maya Chisem</h1>
             <p>
-                Photographer <i class="fa fa-circle"></i>
                 Web Developer <i class="fa fa-circle"></i>
+                Photographer <i class="fa fa-circle"></i>
                 Content Creator
             </p>
 
@@ -54,7 +47,7 @@
         <section id="s2" class="section s2">
             <h1>Resume</h1>
 
-            <i class="fa fa-file" id="file"></i>
+            <i class="fa fa-file" id="file" style="color: white;"></i>
 
             <p>
                 To view this google docs file displaying my 
@@ -90,6 +83,7 @@
 
             <img id="one" alt="photography logo" src="extras/pics/jide.PNG">
         </section>
+        
         <!-- <section id="s5" class="section s5">
             <h1>Content Creator</h1>
 
@@ -104,8 +98,7 @@
             <h1>Contact</h1>
 
             <a href="mailto:chisem.maya@gmail.com" class="fa">chisem.maya@gmail.com</a><br>
-            <a href="mailto:maya.chisem@gmail.com" class="fa">maya@mayachisem.com</a>
-            <p>T: (562) 760-1350</p>
+            <p><a href="tel:5627601350">(562) 760-1350</a></p>
 
             <footer>                
                 <a href="https://www.behance.net/mayachisem" class="fa fa-behance"> </a>

@@ -40,23 +40,10 @@ nav a {
 }
 
 /*  */
-/* down arrow */
-/*  */
-#arrow {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    font-size: 6vh;
-    padding: 15px;
-    z-index: 999;
-}
-
-/*  */
 /* about */
 /*  */
 #s1 {
     text-align: center;
-    /* background-image: linear-gradient(lightgrey, white); */
 }
 
 #s1 h1 {
@@ -66,6 +53,9 @@ nav a {
     right: 0;
     font-size: 90px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background: -webkit-linear-gradient(120deg, black,grey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 #s1 p {
@@ -129,15 +119,22 @@ nav a {
 /*  */
 /* Resume */
 /*  */
-/* #s2 {
-   background-color: chartreuse;
-} */
+
+#s2 {
+   background-color: black;
+   /* background-image: linear-gradient(#162447, #142850); */
+}
+
+#s2 h1 {
+    color: white;
+}
 
 #s2 p {
     position: absolute;
     width: 50%;
     z-index: 1;
     top: 40%;
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -167,18 +164,16 @@ nav a {
 #s4 p a {
     text-decoration: none;
     color: cornflowerblue;
+    padding: 5px;
     z-index: 1;
 }
 
 /*  */
 /* web */
 /*  */
-#s3 {
-    background-color: black;
-}
 
 #s3 h1 {
-    color: white;
+    color: black;
 }
 
 #s3 p {
@@ -187,7 +182,7 @@ nav a {
     width: 50%;
     z-index: 1;
     right: 3%;
-    color: white;
+    color: black;
 }
 
 #s3 img {
@@ -226,6 +221,11 @@ nav a {
     right: 0;
     bottom: 0;
 }
+
+#s4 p a {
+    color: darkblue;
+}
+
 
 /*  */
 /* content */
